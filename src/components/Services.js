@@ -7,7 +7,7 @@ export default class Services extends Component {
     Services: [
       {
         icon: <FaCocktail />,
-        title: "free cocktails",
+        title: "Free cocktails",
         info: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
       },
       {
@@ -22,7 +22,7 @@ export default class Services extends Component {
       },
       {
         icon: <FaBeer />,
-        title: "free Beer",
+        title: "Free Beer",
         info: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
       },
     ],
@@ -31,12 +31,12 @@ export default class Services extends Component {
     return (
       <section className="services">
         <Title title="services" />
-        <div className="service-center">
+        <div className="services-center">
           {this.state.Services.map((item, index) => {
             return (
               <article key={index} className="service">
                 <span>{item.icon}</span>
-                <span className="servicespan">{item.title}</span>
+                <h6>{item.title}</h6>
                 <p>{item.info}</p>
               </article>
             );
