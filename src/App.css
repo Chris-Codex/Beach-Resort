@@ -257,6 +257,7 @@ h6 {
   width: 80%;
   margin: 0 auto;
 }
+
 @media screen and (min-width: 992px) {
   .services-center {
     width: 95vw;
