@@ -4,6 +4,7 @@ import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import Services from "../components/Services";
 import Welcome from "../components/Welcome";
+import FeaturedRooms from "../components/FeaturedRooms";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       </Hero>
       <Welcome />
       <Services />
+      <FeaturedRooms />
     </>
   );
 };
