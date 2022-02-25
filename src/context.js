@@ -10,6 +10,8 @@ class RoomProvider extends Component {
     sortedRooms: [],
     featuredRooms: [],
     loading: true,
+    // greeting: "Goodmorning",
+    // name: "Obiina",
   };
 
   // getData
@@ -38,7 +40,7 @@ class RoomProvider extends Component {
 
   render() {
     return (
-      <RoomContext.Provider value={{}}>
+      <RoomContext.Provider value={{ ...this.state }}>
         {this.props.children}
       </RoomContext.Provider>
     );
