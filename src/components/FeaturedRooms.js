@@ -7,14 +7,12 @@ import Title from "./Title";
 export default class FeaturedRooms extends Component {
   static contextType = RoomContext;
   render() {
-    const { loading, featuredRooms: rooms } = this.context;
+    let { loading, featuredRooms: rooms } = this.context;
     console.log(rooms);
 
-    {
-      rooms.map((item) => {
-        return <Rooms key={item.id} room={item} />;
-      });
-    }
+    rooms = rooms.map((item) => {
+      return <Rooms key={item.id} room={item} />;
+    });
 
     return (
       <section className="featured-rooms">
